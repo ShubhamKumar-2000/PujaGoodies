@@ -19,7 +19,7 @@ public class YoutubePlayerActivity extends YouTubeBaseActivity implements YouTub
         setContentView(R.layout.activity_youtube_player);
 
         youTubePlayerView = findViewById(R.id.youtubeView);
-        youTubePlayerView.initialize("AIzaSyBIbCuydWTuEk1ZcRSSVTAcYa11RCZCPpw", this);
+        youTubePlayerView.initialize("YOUR_API_KEY", this);
     }
 
     @Override
