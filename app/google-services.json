@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "86245780375",
+    "project_id": "puja-goodies-b8fca",
+    "storage_bucket": "puja-goodies-b8fca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86245780375:android:074eb6696894137b5d72d2",
+        "android_client_info": {
+          "package_name": "com.example.pujagoodies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86245780375-rpuq59eeki3ocso1kvst8sv2luid8dde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgbc8Y0q6EdjTYnYBl8Adci7b4-pmmnCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86245780375-rpuq59eeki3ocso1kvst8sv2luid8dde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
