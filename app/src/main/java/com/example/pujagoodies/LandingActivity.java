@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,6 +26,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 
 import org.jetbrains.annotations.NotNull;
+import android.content.res.Resources;
+
 
 public class LandingActivity extends AppCompatActivity {
     TextView userName;
@@ -32,6 +35,7 @@ public class LandingActivity extends AppCompatActivity {
     GoogleSignInClient gClient;
     GoogleSignInOptions gOptions;
     ActivityLandingBinding binding;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -59,6 +63,8 @@ public class LandingActivity extends AppCompatActivity {
                 , "T-Series Bhakti Sagar"
                 , "Pen Bhakti"};
 
+        String [] str={"dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY",
+                "dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY","dnI_7TiD7CY"};
         int[] image = {R.drawable.aastha, R.drawable.aniruddhacharyaji, R.drawable.satsang, R.drawable.bhakthitv, R.drawable.shridevkinandan,
                 R.drawable.panditpradeepji, R.drawable.bhaktisangeet, R.drawable.jayakishori, R.drawable.iamjayakishori, R.drawable.sanskartv,
                 R.drawable.sadhnagold, R.drawable.saregamabhakti, R.drawable.gaurigopaltv, R.drawable.swamiraghvacharya, R.drawable.bhaktisagartv,
@@ -76,6 +82,9 @@ public class LandingActivity extends AppCompatActivity {
 
                 //define your Logic and Intent here
                 Toast.makeText(LandingActivity.this, "You Clikced"+name[position], Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(LandingActivity.this, YoutubePlayerActivity.class);
+                intent.putExtra("id", str[position]);
+                startActivity(intent);
 
             }
         });
